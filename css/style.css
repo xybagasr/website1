@@ -1,0 +1,637 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  min-height: auto;
+}
+
+
+
+/* .popup {
+  background-color: white;
+  width: 450px;
+  padding: 30px 40px;
+  position: absolute;
+  transform: translate(-50% -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 8px;
+} */
+
+/* .audio {
+  position: relative;
+} */
+
+.navbar {
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-weight: +700;
+  font-size: 20px;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: +600;
+}
+
+.nav-link.active {
+  font-weight: +600;
+  color: #ffba33;
+}
+
+.show-popup {
+  background-color: #ffba33;
+  border-color: #ffba33;
+  width: 100%;
+  margin: auto;
+  /* margin-top: 0.5rem; */
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  color: aliceblue;
+}
+
+.popup-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup-container .active{
+ opacity: 1;
+ pointer-events: auto;
+}
+
+.popup-container .popup-box{
+  width: 500px;
+  background: #ffba33;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  padding: 20px;
+}
+
+.popup-box .close.button{
+  width: 100%;
+  height: 45px;
+  background: white;
+  border-radius: 6%;
+  border: none;
+  cursor: pointer;
+
+}
+
+
+
+.btn-suaralatar {
+  background-color: #ffba33;
+  border-color: #ffba33;
+  width: 100%;
+  margin: auto;
+  /* margin-top: 0.5rem; */
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 30px;
+
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../Assets/img/herobaguscrop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 3) 3%, rgba(255, 255, 255, 0) 25%);
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 50rem;
+}
+
+.hero .content h1 {
+  font-size: 5em;
+  font-weight: 700;
+  color: white;
+}
+
+.hero .content h2 {
+  font-size: 3em;
+  font-weight: 500;
+  color: #ffba33;
+}
+
+.hero .content p {
+  max-width: 100rem;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  color: white;
+}
+
+.hero .content p span {
+  color: #ffba33;
+}
+
+.home {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin: auto;
+  align: center;
+  /* margin: auto; */
+  /* margin-bottom: 4rem; */
+}
+
+.home .row h3 {
+  color: #ffba33;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.home .row p {
+  max-width: 50rem;
+}
+
+.home .row img {
+  height: 50%;
+  border-radius: 30px;
+  display: block;
+  margin: auto;
+  align: center;
+}
+
+.home2 {
+  background-color: #ffba33;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin: auto;
+}
+
+.home2 .row h2 {
+  font-weight: 600;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+.home2 .row img {
+  width: 70%;
+  align: center;
+  display: block;
+  margin: auto;
+  border-radius: 30px;
+}
+
+.home2 .row p {
+  font-weight: 400;
+  color: black;
+}
+
+.home2 .row p span {
+  color: white;
+  font-weight: 500;
+}
+
+.home2 .row h3 {
+  color: white;
+}
+.home2 .row h3 span {
+  color: black;
+}
+/* AKHIR HOME 2 */
+
+/* AWAL HOME 3 */
+
+.home3 {
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  font-weight: 500;
+  border-radius: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 123);
+  width: 40%;
+  justify-content: center;
+}
+
+.btn-home3 {
+  background-color: #ffba33;
+  width: 20%;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 30px;
+  padding-bottom: 2rem;
+}
+
+.btn-map {
+  background-color: #ffba33;
+  width: 20%;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 30px;
+  padding-bottom: 2rem;
+}
+
+/* AKHIR HOME 3 */
+
+.pesawat{
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  margin: auto;
+  align: center;
+}
+
+.pesawat .row1 h2{
+  color: #ffba33;
+  font-weight: bold;
+  text-align: center;
+  font-size: 26px;
+}
+
+.pesawat .row1 p{
+  text-align: center;
+}
+
+.pesawat .row2 {
+  background-color: #ffba33;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 123);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* gap: 5px; */
+  border-radius: 50px 50px 0 0;
+
+}
+
+.pesawat .row2 .box-pesawat {
+  text-align: center;
+  position: relative;
+  max-width: 300px;
+  font-size: 12px;
+  margin-top: 20px;
+  padding: 30px;
+  
+  /* padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 30px; */
+
+
+}
+
+
+.box-pesawat .button-pesan {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #ffba33;
+  width: 100%;
+  height: 140%;
+  background-color:#ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 20px 0 0;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  transition: .45s ease-in-out;
+}
+
+.box-pesawat:hover .button-pesan{
+  clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  transition: .50s ease-in-out;
+}
+
+.button-pesan p{
+  columns: black;
+}
+
+.button-pesan a{
+  color: #ffba33;
+  
+}
+
+.container-pesawat .row {
+  margin: 1.5px
+}
+
+/* CB UGGP INDO NEW*/
+.uggpindonew h2 {
+  font-weight: 600;
+  padding-top: 4rem;
+}
+
+.uggpindonew .row2 {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.uggpindonew .row2 div {
+  margin: 1.5px;
+}
+
+.uggpindonew .row3 div {
+  margin: 1.5px;
+}
+
+.uggpindonew .row3 {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.uggpindonew .card-uggpindo {
+  position: relative;
+  width: 216px;
+  border-radius: 30px;
+  overflow-y: hidden;
+}
+
+.uggpindonew .detail-uggp {
+  background-color: rgba(255, 255, 255, 0.427);
+  position: absolute;
+  bottom: -60%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(1.5px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 123);
+  transition: 0.5s ease-in-out;
+}
+
+.uggpindonew .card-uggpindo:hover .detail-uggp {
+  bottom: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.uggpindonew .detail-uggp .btnuggp {
+  background-color: #ffba33;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 30px;
+}
+
+.uggpindonew .detail-uggp .btnuggp1 {
+  background-color: #ffba33;
+  width: 60%;
+  margin: auto;
+  margin-top: 0.5rem;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 30px;
+}
+
+.uggpindonew .detail-uggp .title-uggp {
+  font-weight: 500;
+}
+
+.uggpindonew .btnuggp .a {
+  color: black;
+}
+
+.uggpindonew .card-body {
+  height: 510px;
+}
+
+/* AWAL UGGP INDO */
+/* .uggpindo h2 {
+  font-weight: 600;
+  padding-top: 4rem;
+}
+
+.container .uggpindo-wrapper {
+  display: flex;
+}
+.uggpindo-wrapper .row2 {
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.uggpindo-wrapper .card-uggpindo {
+  position: relative;
+  width: 216px;
+  border-radius: 20px;
+  overflow-y: hidden;
+}
+
+.row2 .detail-uggp {
+  background-color: rgba(255, 255, 255, 0.427);
+  position: absolute;
+  bottom: -60%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(1.5px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 123);
+  transition: 0.5s ease-in-out;
+}
+
+.card-uggpindo:hover .detail-uggp {
+  bottom: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.detail-uggp .btnuggp {
+  background-color: #ffba33;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 30px;
+}
+
+.detail-uggp .title-uggp {
+  font-weight: 500;
+}
+
+.btnuggp .a {
+  color: black;
+}
+
+.card-body {
+  height: 510px;
+}
+
+AKHIR UGGP */
+
+/* AWAL MAP */
+#map {
+  /* width: 95%;
+  /* height: 90vh; */
+  /* margin-top: 4rem; */
+  /* position: absolute; */
+  margin: 0px 0px;
+  top: 10px;
+  bottom: 0px;
+}
+
+#marker {
+  background-image: url('https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+
+#fly {
+  display: block;
+  position: relative;
+  margin: 5px 50px;
+  height: 31px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  background: #ffba33;
+}
+
+/* .map #peta {
+  width: 95%; */
+/* height: 85vh; */
+/* } */
+
+.map .col .h2 {
+  color: #ffba33;
+}
+
+.legend {
+  margin: 20px 20px;
+  background-color: white;
+  border-radius: 3px;
+  bottom: 30px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 2);
+  font: 122px/20px;
+  padding: 10px;
+  position: absolute;
+  left: 10px;
+  z-index: 1;
+}
+
+.legend div span {
+  border-radius: 60%;
+  display: inline-block;
+  height: 10px;
+  margin-right: 5px;
+  width: 10px;
+}
+
+.legend div {
+  text-align: left;
+}
+
+/* .mapboxgl-popup {
+  max-width: 400px;
+  font:
+      12px/20px 'Helvetica Neue',
+      Arial,
+      Helvetica,
+      sans-serif;
+} */
+
+/* AKHIR MAP */
+
+/* AWAL PETUNJUK */
+.petunjuk {
+  background-color: white;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  font-weight: 500;
+  border-radius: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 123);
+  width: 40%;
+  justify-content: center;
+}
+
+/* background-color: white;
+padding-top: 1rem;
+padding-bottom: 0.5rem;
+margin-top: 2rem;
+font-weight: 500;
+border-radius: 30px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 123);
+width: 40%;
+justify-content: center; */
+
+/* AKHIR PETUNJUK */
+
+/* AWAL DESKRIPSI */
+.deskripsiuggp {
+  margin-top: 4rem;
+}
+
+.detail-desc .deskripsi {
+  background-color: rgba(255, 255, 255, 0.427);
+  position: absolute;
+  bottom: -60%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(1.5px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 123);
+}
+
+/* AKHIR DESKRIPSI */
+
+/* AWAL CONTACT */
+
+.kontak {
+  padding-top: rem;
+  justify-content: center;
+}
+
+.kontak .btn-contact {
+  background-color: #ffba33;
+  width: 20%;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 30px;
+}
+
+.footer {
+}
+
+/* background-color: #ffba33;
+width: 20%;
+margin: auto;
+text-align: center;
+padding: 10px 0;
+border-radius: 30px;
+padding-bottom: 2rem; */

@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scable=no" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!--Font Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Script -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css' rel='stylesheet' />
+
+
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
+    <script src="script.js"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Logo Title -->
+    <link rel="icon" href="Assets/img/Ellipse 1.png" type=""image/x-icon>
+
+    <title>Persebaran UGGp di Indonesia</title>
+  </head>
+
+  <body>      
+    <div>
+      <audio autoplay>
+        <source src="Assets/vid/backsound.mp3" type="audio/mp3"/>
+      </audio>
+    </div>
+
+      <!-- <audio autoplay loop src ="Assets/vid/backsound.mp3" type="audio/mpeg"></audio> -->
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed w-100">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="Assets/img/Ellipse 1.png" alt="" width="35" class="d-inline-block align-text-top me-3" />
+          UNESCO Global Geopark</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" aria-current="page" href="#home">Beranda</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#peta">Peta</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#uggpindonew">Tentang</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bahasa
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://persebaranuggpdiindonesia.000webhostapp.com/">Bahasa Indonesia</a></li>
+                <li><a class="dropdown-item" href="https://persebaranuggpdiindonesiaeng.000webhostapp.com/">Bahasa Inggris</a></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ENDING NAVBAR -->
+
+    <!-- <div class="popup">
+      <h1>Silahkan klik untuk mendengarkan musik latar</h1>
+    </div> -->
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <main class="content">
+        <h1>UNESCO</h1>
+        <h2>Global Geopark (UGGp) di Indonesia</h2>
+        <p>Informasi Persebaran <span class="fw-bold" style="border-color: black;">UGGp</span> di Indonesia dan Rutenya</p>
+      </main>
+    </section>
+    <!-- ENDING HERO SECTION -->
+
+    <!-- HOME -->
+    <section class="home" id="home">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2 class="fw-bold">GEOPARK</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <h3 class="fw-bold">GEO + PARK</h3>
+            <p>Wilayah geografi yang di dalamnya terdapat situs warisan geologi (geosite) dan bentang alam yang bernilai terkait aspek :</p>
+            <p>1. Warisan geologi (geoheritage)</p>
+            <p>2. Keragaman geologi (geodiversity)</p>
+            <p>3. Keanekaragaman hayati (biodiversity)</p>
+            <p>4. Keragaman budaya (cultural-diversity)</p>
+          </div>
+          <div class="col-md-4">
+            <img src="Assets/img/Belitong_kemlu.go.idcrop.jpeg" alt="kemlu.go.id"/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ENDING HOME -->
+
+    <!-- HOME2 -->
+    <section class="home2" id="home2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h2 class="fw-bold text-center">UNESCO Global Geopark(UGGp)</h2>
+            <img src="Assets/img/UNESCOLOGOHOME.jpg" alt="unesco.com" />
+          </div>
+          <div class="col-md-7" style="padding-top: 2rem;">
+            <p>Warisan bumi bertaraf internasional untuk investasi pembangunan penduduk asli secara berkelanjutan dengan dasar konservasi edukasi.</p>
+            <p><span class="fw-bold">Fungsi :</span> </p>
+            <p>1. Konservasi / Perlindungan </p>
+            <p>2. Edukasi / Pendidikan </p>
+            <p>3. Pembangunan Berkelanjutan</p>
+            <h3>UNESCO Global Geopark (UGGp) : <span class="fw-bold">195 Geopark</span> yang tersebar di <span class="fw-bold">48 negara</spanclass> di dunia.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ENDING HOME2 -->
+ 
+    <div class="container" style="padding-top: 4rem;" id="peta">
+      <div class="row text-center">
+        <div class="col">
+          <h2 class="fw-bold text-center" style="color: #ffba33;">PETA</h2>
+          <p><span class="fw-bold">Di Indonesia</span> sendiri, terdapat <span class="fw-bold">10 Geopark</span> yang menjadi bagian dari UNESCO Global Geopark (UGGp)</p>
+          <!-- <p class="text-center">Persebaran UNESCO Global Geopark (UGGp) di Indonesia 
+            dan Rute Menuju Masing - Masing UGGp</p> -->
+          <p class="text-center">Untuk melihat peta persebaran UGGp dan Rutenya, klik tombol "Peta" di bawah ini</p>
+          <button class="btn-map" style="background-color: #ffba33; border-color: #ffba33;
+          width: 20%;
+          margin: auto;
+          text-align: center;
+          padding: 10px 0;
+          border-radius: 30px;"> <a href="https://persebaranuggpindonesia.000webhostapp.com/">Peta</a>
+          </button >
+        </div>
+      </div>
+    </div>
+
+    <section class="container petunjuk" id="petunjuk" style="background-color:white;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 123);
+    width: 60%;
+    justify-content: center;">
+      <div class="row">
+        <h3 class="text-center fw-bold" style="color: #ffba33;">PETUNJUK</h3>
+        <h6 class="text-center">Dibawah ini petunjuk penggunaan Peta Persebaran UGGp di Indonesia : </h6>
+      </div>
+      <div class="row">
+        <li>
+          <ul>1. Gunakan tombol zoom in <img src="Assets/img/in.png" width="20px" alt="">, zoom out <img src="Assets/img/out.png" width="20px" alt="">, dan reset bearing to north <img src="Assets/img/north.png" width="20px" alt="">untuk mengatur posisi peta.</ul>
+          <ul>2. Gunakan tombol find my location <img src="Assets/img/location.png" width="20px" alt="">untuk menemukan lokasi anda</ul>
+          <ul>3. Masukkan <img src="Assets/img/loca.png" width="20px" alt=""> sebagai tujuan awal dan <img src="Assets/img/locb.png" width="20px" alt="">sebagai salah satu tujuan destinasi UGGp.</ul>
+          <ul>4. Rute ditampilkan sebagai garis berwarna biru di peta</ul>
+        </li>
+      </div>
+      
+    </section>
+    <!-- AKHIR PETUNJUK -->
+
+    <!-- AWAL PESAWAT BARU -->
+    <section class="pesawat" id="pesawat">
+      <div class="container">
+        <div class="row1">
+          <h2>Informasi Transportasi Udara</h2>
+          <p>Berikut informasi bandar udara terdekat dan pemesanan tiket pesawat menuju masing - masing UGGp</p>
+        </div>
+        <div class="row2">
+          <div class="box-pesawat">
+            <i class='bx bxs-plane-alt bx-md'></i>
+            <h7>Geopark Batur</h7>
+            <div class="button-pesan">
+              <div class="row">
+                <p style="color: black;">Bandar Udara Internasional I Gusti Ngurah Rai</p>
+                <a href="https://www.traveloka.com/en-id/flight/fullsearch?ap=JKTA.DPS&dt=21-5-2024.NA&ps=1.0.0&sc=ECONOMY">Pesan Tiket</a>
+              </div>
+            </div>           
+          </div>
+          <div class="box-pesawat">
+            <i class='bx bxs-plane-alt bx-md'></i>
+            <h7>Geopark Gn.Sewu</h7>            
+            <div class="button-pesan">
+              <div class="row">
+                <p style="color: black;">Bandar Udara Internasional Yogyakarta</p>
+                <a href="https://www.traveloka.com/en-id/flight/fullsearch?ap=JKTA.YIA&dt=21-5-2024.NA&ps=1.0.0&sc=ECONOMY">Pesan Tiket</a>
+              </div>
+            </div> 
+          </div>
+          <div class="box-pesawat">
+            <i class='bx bxs-plane-alt bx-md'></i>
+            <h7>Geopark Rinjani</h7>            
+            <div class="button-pesan">
+              <div class="row">
+                <p style="color: black;">Bandar Udara Internasional Lombok</p>
+                <a href="https://www.traveloka.com/en-id/flight/fullsearch?ap=JKTA.LOP&dt=21-5-2024.NA&ps=1.0.0&sc=ECONOMY">Pesan Tiket</a>
+              </div>
+            </div> 
+          </div>
+          <div class="box-pesawat">
+            <i class='bx bxs-plane-alt bx-md'></i>
+            <h7>Geopark Ciletuh</h7>           
+            <div class="button-pesan">
+              <div class="row">
+                <p style="color: black;">Bandar Udara Internasional Halim Perdana Kusuma</p>
+                <a href="https://www.traveloka.com/en-id/flight/fullsearch?ap=YKIA.HLP&dt=21-5-2024.NA&ps=1.0.0&sc=ECONOMY">Pesan Tiket</a>
+              </div>
+            </div> 
+          </div>
+          <div class="box-pesawat">
+            <i class='bx bxs-plane-alt bx-md'></i>
+            <h7>Geopark Toba</h7>            
+            <div class="button-pesan">
+              <div class="row">
+                <p style="color: black;">Bandar Udara Raja Sisingamangaraja XII (Silangit)</p>
+                <a href="https://www.traveloka.com/en-id/flight/fullsearch?ap=JKTA.DTB&dt=23-5-2024.NA&ps=1.0.0&sc=ECONOMY">Pesan Tiket</a>
+              </div>
+            </div> 
+          </div>
+          <div class="box-pesawat">
+            <i class='bx bxs-plane-alt bx-md'></i>
+            <h7>Geopark Belitong</h7>            
+            <div class="button-pesan">
+              <div class="row">
+                <p style="color: black;">Bandar Udara Internasional H.A.S. Hanandjoeddin</p>
+                <a href="https://www.traveloka.com/en-id/flight/fullsearch?ap=JKTA.TJQ&dt=21-05-2024.NA&ps=1.0.0&sc=ECONOMY">Pesan Tiket</a>
+              </div>
+            </div> 
+          </div>
+          <div class="box-pesawat">
+            <i class='bx bxs-plane-alt bx-md'></i>
+            <h7>Geopark Ijen</h7>           
+            <div class="button-pesan">
+              <div class="row">
+                <p style="color: black;">Bandar Udara Internasional Juanda</p>
+                <a href="https://www.traveloka.com/en-id/flight/fullsearch?ap=JKTA.SUB&dt=23-5-2024.NA&ps=1.0.0&sc=ECONOMY">Pesan Tiket</a>
+              </div>
+            </div> 
+          </div>
+          <div class="box-pesawat">
+            <i class='bx bxs-plane-alt bx-md'></i>
+            <h7>Geopark Maros Pangkep</h7>           
+            <div class="button-pesan">
+              <div class="row">
+                <p style="color: black;">Bandar Udara Internasional Sultan Hasanuddin</p>
+                <a href="https://www.traveloka.com/en-id/flight/fullsearch?ap=JKTA.UPG&dt=23-5-2024.NA&ps=1.0.0&sc=ECONOMY">Pesan Tiket</a>
+              </div>
+            </div> 
+          </div>
+          <div class="box-pesawat">
+            <i class='bx bxs-plane-alt bx-md'></i>
+            <h7>Geopark Merangin</h7>            
+            <div class="button-pesan">
+              <div class="row">
+                <p style="color: black;">Bandara Sultan Thaha Saifuddin</p>
+                <a href="https://www.traveloka.com/en-id/flight/fullsearch?ap=JKTA.DJB&dt=23-5-2024.NA&ps=1.0.0&sc=ECONOMY">Pesan Tiket</a>
+              </div>
+            </div> 
+          </div>
+          <div class="box-pesawat">
+            <i class='bx bxs-plane-alt bx-md'></i>
+            <h>Geopark Raja Ampat</h>           
+            <div class="button-pesan">
+              <div class="row">
+                <p style="color: black;">Bandar Udara Marinda Raja Ampat</p>
+                <a href="https://www.traveloka.com/en-id/flight/fullsearch?ap=JKTA.RJM&dt=23-5-2024.NA&ps=1.0.0&sc=ECONOMY">Pesan Tiket</a>
+              </div>
+            </div> 
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- AKHIR PESAWAT BARU -->
+    
+
+    <!-- DESKRIPSI UGGP -->
+    <section class="uggpindonew" id="uggpindonew">
+      <div class="container uggpindonew">
+        <div class="row1">
+          <div class="title">
+            <h2 class="fw-bold text-center" style="color: #ffba33;">TENTANG</h2>
+            <h2 class="fw-bold text-center" style="color: black">UNESCO GLOBAL GEOPARK DI INDONESIA</h2>
+          </div>
+        </div>
+        <div class="text-center">
+          <P clas="text-center" style="margin-top: 2rem;">Untuk melihat informasi mengenai akomodasi, fasilitas, biaya, dan lainnya dapat dilihat melalui website masing - masing UGGp atau klik pada tombol "Detail" dan untuk melihat rute menuju masing - masing geopark klik tombol "Rute" di bawah ini</P>
+        </div>
+        <div class="row2">
+          <div class="col1">
+            <div class="card-uggpindo">
+              <img src="Assets/img/Rectangle 36.png" alt="metrobali.com">
+              <div class="detail-uggp">
+                <div class="title-uggp">
+                  <p class="title fw-bold text-center">Geopark Batur</p>
+                </div>
+                <div class="deskripsi">
+                  <p class="text-center">Bali Utara</p>
+                  <p class="text-center">UGGp tahun 2012</p>
+                </div>
+                <div class="btnuggp">
+                  <a href="https://baturglobalgeopark.com/">Detail</a>
+                </div>
+                <div class="btnuggp1">
+                  <a href="https://www.google.com/maps/dir//P987%2BCQW+Batur+UNESCO+Global+Geopark,+Bantang,+Kec.+Kintamani,+Kabupaten+Bangli,+Bali+80652/@-8.2838922,115.3617844,17z/data=!4m18!1m8!3m7!1s0x2dd1f31f2d0e0031:0xcd2266fd866ef940!2sBatur+UNESCO+Global+Geopark!8m2!3d-8.2838925!4d115.3644641!15sCg1nZW9wYXJrIGJhdHVykgEEcGFya-ABAA!16s%2Fg%2F11c30_9l9c!4m8!1m0!1m5!1m1!1s0x2dd1f31f2d0e0031:0xcd2266fd866ef940!2m2!1d115.3644641!2d-8.2838925!3e3?entry=ttu">Rute</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col2">
+            <div class="card-uggpindo">
+              <img src="Assets/img/Rectangle 25.png" alt="metrobali.com">
+              <div class="detail-uggp">
+                <div class="title-uggp">
+                  <p class="title fw-bold text-center">Geopark Gunung Sewu</p>
+                </div>
+                <div class="deskripsi">
+                  <p class="text-center">DIY - Jawa Timur</p>
+                  <p class="text-center">UGGp tahun 2015</p>
+                </div>
+                <div class="btnuggp">
+                  <a href="https://geoparkgunungsewu.com/">Detail</a>
+                </div>
+                <div class="btnuggp1">
+                  <a href="https://www.google.com/maps/dir//XQ5M%2BX89+GUNUNG+SEWU+NATIONAL+GEO+PARK,+Karang+Lo+Wetan,+Gebangharjo,+Pracimantoro,+Wonogiri+Regency,+Central+Java+57664/@-8.0398268,110.782958,19.5z/data=!4m17!1m7!3m6!1s0x2e7bc95a5ecc6a3d:0xbedd85131930ef76!2sGUNUNG+SEWU+NATIONAL+GEO+PARK!8m2!3d-8.0400917!4d110.7833708!16s%2Fg%2F11hql14dt9!4m8!1m0!1m5!1m1!1s0x2e7bc95a5ecc6a3d:0xbedd85131930ef76!2m2!1d110.7833708!2d-8.0400917!3e3?entry=ttu">Rute</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col3">
+            <div class="card-uggpindo">
+              <img src="Assets/img/Rectangle 27.png" alt="metrobali.com">
+              <div class="detail-uggp">
+                <div class="title-uggp">
+                  <p class="title fw-bold text-center">Geopark Rinjani</p>
+                </div>
+                <div class="deskripsi">
+                  <p class="text-center">NTB</p>
+                  <p class="text-center">UGGp tahun 2018</p>
+                </div>
+                <div class="btnuggp">
+                  <a href="https://rinjanigeopark.com/">Detail</a>
+                </div>
+                <div class="btnuggp1">
+                  <a href="https://www.google.com/maps/dir//Taman+Nasional+Gn.+Rinjani,+Semeru,+Senaru,+Kec.+Bayan,+Kabupaten+Lombok+Utara,+Nusa+Tenggara+Bar.+83354/@-8.4185561,116.3614127,13.75z/data=!4m17!1m7!3m6!1s0x2dcdcd3fffffffdd:0xf86f554f959dc261!2sTaman+Nasional+Gunung+Rinjani!8m2!3d-8.4254297!4d116.3958027!16s%2Fg%2F11gbxb2np2!4m8!1m0!1m5!1m1!1s0x2dcdcd3fffffffdd:0xf86f554f959dc261!2m2!1d116.3958027!2d-8.4254297!3e3?entry=ttu">Rute</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col4">
+            <div class="card-uggpindo">
+              <img src="Assets/img/Rectangle 29.png" alt="metrobali.com">
+              <div class="detail-uggp">
+                <div class="title-uggp">
+                  <p class="title fw-bold text-center">Geopark Ciletuh</p>
+                </div>
+                <div class="deskripsi">
+                  <p class="text-center">Jawa Barat</p>
+                  <p class="text-center">UGGp tahun 2018</p>
+                </div>
+                <div class="btnuggp">
+                  <a href="https://sukabumikab.go.id/">Detail</a>
+                </div>
+                <div class="btnuggp1">
+                  <a href="https://www.google.com/maps/dir//Geopark+Ciletuh,+Ciwaru,+Kec.+Ciemas,+Kabupaten+Sukabumi,+Jawa+Barat+43177/@-7.1815465,106.4605302,18z/data=!4m18!1m8!3m7!1s0x2e42a174c692426f:0xb63a761249266e9f!2sGeopark+Ciletuh!8m2!3d-7.1816222!4d106.4621544!15sCg9nZW9wYXJrIGNpbGV0dWhaESIPZ2VvcGFyayBjaWxldHVokgESdG91cmlzdF9hdHRyYWN0aW9umgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVI1YVZrMldrNW5FQUXgAQA!16s%2Fg%2F11f3rb8f8d!4m8!1m0!1m5!1m1!1s0x2e42a174c692426f:0xb63a761249266e9f!2m2!1d106.4621544!2d-7.1816222!3e3?entry=ttu">Rute</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col5">
+            <div class="card-uggpindo">
+              <img src="Assets/img/Rectangle 31.png" alt="metrobali.com">
+              <div class="detail-uggp">
+                <div class="title-uggp">
+                  <p class="title fw-bold text-center">Geopark Kaldera Toba</p>
+                </div>
+                <div class="deskripsi">
+                  <p class="text-center">Sumatera Utara</p>
+                  <p class="text-center">UGGp tahun 2020</p>
+                </div>
+                <div class="btnuggp">
+                  <a href="https://calderatobageopark.org/">Detail</a>
+                </div>
+                <div class="btnuggp1">
+                  <a href="https://www.google.com/maps/dir//HJ2Q%2BQQ2+Geopark+Kaldera+Toba,+Turpuk+Sagala,+Kec.+Harian,+Kabupaten+Samosir,+Sumatera+Utara+22396/@2.5474237,98.6502776,13.5z/data=!4m17!1m7!3m6!1s0x3031d16278081759:0x5798f88aeb64b071!2sGeopark+Kaldera+Toba!8m2!3d2.5518854!4d98.639385!16s%2Fg%2F11r4b3761l!4m8!1m0!1m5!1m1!1s0x3031d16278081759:0x5798f88aeb64b071!2m2!1d98.639385!2d2.5518854!3e3?entry=ttu">Rute</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row3">
+          <div class="col1">
+            <div class="card-uggpindo">
+              <img src="Assets/img/Rectangle 38.png" alt="metrobali.com">
+              <div class="detail-uggp">
+                <div class="title-uggp">
+                  <p class="title fw-bold text-center">Geopark Belitong</p>
+                </div>
+                <div class="deskripsi">
+                  <p class="text-center">Bangka Belitung</p>
+                  <p class="text-center">UGGp tahun 2021</p>
+                </div>
+                <div class="btnuggp">
+                  <a href="https://belitonggeopark.net/">Detail</a>
+                </div>
+                <div class="btnuggp1">
+                  <a href="https://www.google.com/maps/dir//PUSAT+INFORMASI+BELITONG+GEOPARK,+Jl.+Seroja+No.484,+Parit,+Kec.+Tj.+Pandan,+Kabupaten+Belitung,+Kepulauan+Bangka+Belitung+33411/@-2.7394796,107.6243331,16.71z/data=!4m17!1m7!3m6!1s0x2e1717681ed5dd49:0x506d5d3ecbe3b775!2sPUSAT+INFORMASI+BELITONG+GEOPARK!8m2!3d-2.7397942!4d107.6269473!16s%2Fg%2F11fm6hnx_s!4m8!1m0!1m5!1m1!1s0x2e1717681ed5dd49:0x506d5d3ecbe3b775!2m2!1d107.6268706!2d-2.7397983!3e3?entry=ttu">Rute</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col2">
+            <div class="card-uggpindo">
+              <img src="Assets/img/Rectangle 43.png" alt="metrobali.com">
+              <div class="detail-uggp">
+                <div class="title-uggp">
+                  <p class="title fw-bold text-center">Geopark Ijen</p>
+                </div>
+                <div class="deskripsi">
+                  <p class="text-center">Jawa Timur</p>
+                  <p class="text-center">UGGp tahun 2023</p>
+                </div>
+                <div class="btnuggp">
+                  <a href="http://geopark-ijen.jatimprov.go.id/">Detail</a>
+                </div>
+                <div class="btnuggp1">
+                  <a href="https://www.google.com/maps/dir//W6RQ%2BWM5+Ijen+Geopark,+Blue+Fire,+Jl.+Kawah+Ijen,+Plalangan+I,+Kalianyar,+Kec.+Ijen,+Kabupaten+Bondowoso,+Jawa+Timur+68288/@-8.0602227,114.2343722,16.25z/data=!4m18!1m8!3m7!1s0x2dd1379ecab0c963:0x3a6f4b1fc6918390!2sIjen+Geopark,+Blue+Fire!8m2!3d-8.0577454!4d114.2392479!15sCgxnZW9wYXJrIGlqZW6SARJ0b3VyaXN0X2F0dHJhY3Rpb27gAQA!16s%2Fg%2F11rf7bzgg4!4m8!1m0!1m5!1m1!1s0x2dd1379ecab0c963:0x3a6f4b1fc6918390!2m2!1d114.2392479!2d-8.0577454!3e3?entry=ttu">Rute</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col3">
+            <div class="card-uggpindo">
+              <img src="Assets/img/Rectangle 45.png" alt="metrobali.com">
+              <div class="detail-uggp">
+                <div class="title-uggp">
+                  <p class="title fw-bold text-center">Geopark Maros Pangkep</p>
+                </div>
+                <div class="deskripsi">
+                  <p class="text-center">Sulawesi Selatan</p>
+                  <p class="text-center">UGGp tahun 2023</p>
+                </div>
+                <div class="btnuggp">
+                  <a href="https://geoparkmarospangkep.id/">Detail</a>
+                </div>
+                <div class="btnuggp1">
+                  <a href="https://www.google.com/maps/dir//2MFF%2B2M6+Geopark+Maros+Pangkep,+Ktr.+Kelurahan+Leang+Leang,+Leang-Leang,+Kec.+Bantimurung,+Kabupaten+Maros,+Sulawesi+Selatan+90561/@-4.9768016,119.6662099,16z/data=!4m17!1m7!3m6!1s0x2dbe59e3a95ba5d5:0xd5d56a979dc1240d!2sGeopark+Maros+Pangkep!8m2!3d-4.9762437!4d119.6736525!16s%2Fg%2F11s1vz4j_1!4m8!1m0!1m5!1m1!1s0x2dbe59e3a95ba5d5:0xd5d56a979dc1240d!2m2!1d119.6736525!2d-4.9762437!3e3?entry=ttu">Rute</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col4">
+            <div class="card-uggpindo">
+              <img src="Assets/img/Rectangle 47.png" alt="metrobali.com">
+              <div class="detail-uggp">
+                <div class="title-uggp">
+                  <p class="title fw-bold text-center">Geopark Merangin</p>
+                </div>
+                <div class="deskripsi">
+                  <p class="text-center">Jambi</p>
+                  <p class="text-center">UGGp tahun 2023</p>
+                </div>
+                <div class="btnuggp">
+                  <a href="https://geopark.meranginkab.go.id/">Detail</a>
+                </div>
+                <div class="btnuggp1">
+                  <a href="https://www.google.com/maps/dir//R4C6%2BH8M+Galeri+Of+Geopark+Merangin,+Air+Batu,+Kec.+Renah+Pembarap,+Kabupaten+Merangin,+Jambi+37361/@-2.1418083,101.9495974,11z/data=!4m18!1m8!3m7!1s0x2e2e09ec2fa5b66f:0x7c8f46c094200701!2sGaleri+Of+Geopark+Merangin!8m2!3d-2.1785474!4d102.110799!15sCg1nZW9wYXJrIGphbWJpkgESdG91cmlzdF9hdHRyYWN0aW9u4AEA!16s%2Fg%2F11qm3r80db!4m8!1m0!1m5!1m1!1s0x2e2e09ec2fa5b66f:0x7c8f46c094200701!2m2!1d102.110799!2d-2.1785474!3e3?entry=ttu">Rute</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col5">
+            <div class="card-uggpindo">
+              <img src="Assets/img/Rectangle 41.png" alt="metrobali.com">
+              <div class="detail-uggp">
+                <div class="title-uggp">
+                  <p class="title fw-bold text-center">Geopark Raja Ampat</p>
+                </div>
+                <div class="deskripsi">
+                  <p class="text-center">Papua Barat</p>
+                  <p class="text-center">UGGp tahun 2023</p>
+                </div>
+                <div class="btnuggp">
+                  <a href="https://rajaampatgeopark.com/id/">Detail</a>
+                </div>
+                <div class="btnuggp1">
+                  <a href="https://www.google.com/maps/dir//Pusat+Informasi+Geopark+Raja+Ampat,+Jl.+Yos+Sudarso,+Waisai,+Raja+Ampat+Regency,+West+Papua+98482/@-0.7779143,129.0379205,8.5z/data=!4m18!1m8!3m7!1s0x2d5f1d64ac4d7819:0x8e55337a4420cb30!2sPusat+Informasi+Geopark+Raja+Ampat!8m2!3d-0.4356249!4d130.8079581!15sChJnZW9wYXJrIHJhamEgYW1wYXSSARBlZHVjYXRpb25fY2VudGVy4AEA!16s%2Fg%2F11vydsrx97!4m8!1m0!1m5!1m1!1s0x2d5f1d64ac4d7819:0x8e55337a4420cb30!2m2!1d130.8079581!2d-0.4356249!3e3?entry=ttu">Rute</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="desc" id="desc" style="margin-top: 4rem;">
+      <div class="row1">
+        <P></P>
+      </div>
+      <div class="row2" style="justify-content: center;">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+          </div>
+          <div class="carousel-inner">  
+            <div class="carousel-item active">
+              <img src="Assets/img/000_FREEPIK UTK DESC/btr/Rectangle 54.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Geopark Batur</h5>
+                <p>Mencakup dua kaldera vulkanik dengan dinding kaldera luar seluas 370,5 km2 yang mengelilingi kaldera dalam, Gunung Batur, dan Danau. Terdapat pemandangan lanskap indah yang berasal dari kaldera tua (luar) dan muda (dalam) yang terbentuk dari letusan dahsyat 29.000 tahun yang lalu. Merupakan komponen penting "cincin api pasifik" dengan flora, fauna endemik dan budaya asli agama Hindu Bali.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Assets/img/000_FREEPIK UTK DESC/sewu_dr website official/Rectangle 58.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Geopark Gunung Sewu</h5>
+                <p>Dikenal sebagai kawasan karst tropik yang terhampar dari Gunung Kidul DIY hingga Pacitan Jawa Timur dengan luas 1500km. Memiliki keragaman geosite, salah satunya adalah Situs Gunung Api Purba Nglanggeran yang disekitar pegunungannya terdapat mata air indah yang keluar dari celah batuan. </p>
+              </div>
+            </div> 
+            <div class="carousel-item">
+              <img src="Assets/img/000_FREEPIK UTK DESC/rinjani freepik/Rectangle 61.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Geopark Rinjani</h5>
+                <p>Bertitik pusat di Gunung Rinjani sebagai gunung tertinggi kedua di Indonesia yang memiliki ketinggian mencapai 3.726 mdpl. Kawah Rinjani yang disebut juga Segara Muncar yang merupakan sebuah kaldera indah, juga terdapat Danau Segara Anak yang terbentuk dari proses vulkanis dengan air yang biru jernih. </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Assets/img/000_FREEPIK UTK DESC/ciletuh/Rectangle 63.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Geopark Ciletuh</h5>
+                <p>Geopark dengan konsep pariwisata berkelanjutan dan konservasi darat hingga laut dengan berbagai macam keragaman geologi, flora, fauna, hingga wisata budaya. Keindahan alam yang beragam, salah satunya Curug Puncak Manik yang memiliki ketinggian mencapai 100m dengan pancuran air terjun yang jernih. Juga terdapat curug lainnya seperti Cikaso, Awang, dan Cigangsa</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Assets/img/000_FREEPIK UTK DESC/toba website official/Rectangle 66.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Geopark Kaldera Toba</h5>
+                <p>Kaldera yang terbentuk dari amblasan (collapse) pasca erupsi supervulcano gunung api Toba purba yang kemudian menjadi kaldera volcano-tektonik (kawah gunung api raksasa) dan terisi oleh air hujan. Beberapa Geosite yang ada di Kaldera Toba meliputi Hutatinggi-Sidohini, Haranggaol, Parapat, Hutaginjang, Hutan Eden, Batak Museum, dan Sipinsur </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Assets/img/000_FREEPIK UTK DESC/belitong web resmi/Rectangle 54.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Geopark Belitong</h5>
+                <p>Geopark Belitong memiliki tiga warisan geologi yang bernilai yaitu batu satam (batu yang terbentuk dari tabrakan meteor dengan lapisan bumi dengan kandungan timah yang tinggi), batuan granit, dan warisan sejarah tambang timah. Selain itu juga terdapat berbagai macam keanekaragaman flora dan fauna. Sampai saat ini terdapat 17 geosite yang ada di dalam Kawasan Geopark Belitong </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Assets/img/000_FREEPIK UTK DESC/ijen web resmi/Rectangle 54.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Geopark Ijen</h5>
+                <p>Kawasan geopark ini memiliki keragaman geologi beupa ijen blue fire, kawah wurung, danau asam, lava blawan, dan lainnya. Terdapat 21 situs geologi yang dikembangkan, mulai dari skala lokal hingga skala internasional. Salah satu dari banyak situs geologi yang mempunyai fenomena luar biasa adalah Kawah Ijen, danau kawah paling asam di bumi dengan api biru yang muncul di daerah Solfatara. Keragaman biologi didalamnya terdapat hutan pelangi dan kopi bondowoso, serta keragaman budaya seperti tari petik kopi.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Assets/img/000_FREEPIK UTK DESC/maros web resmi/Rectangle 55.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Geopark Maros Pangkep</h5>
+                <p>Dijuluki dengan sebutan "The Land Of Tomorow". Di kawasan geopark ini terdapat berbagai wisata alam berbasis geodiversity, geoheritage, dan biodiversity. Terdapat 26 geosite unggulan diantaranya gua batu, air terjun bantimurang, desa malaka, hutan amarani, dan lainnya. Juga terdapat keragaman flora, fauna, dan budaya.  </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Assets/img/000_FREEPIK UTK DESC/merangin web resmi/Rectangle 59.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Geopark Merangin</h5>
+                <p>Kawasan geopark ini memiliki keberagaman geologi disepanjang aliran Sungai Merangin, serta keragaman flora dan fauna yang juga terekam sebagai fosil purba sekitar 250 – 290 juta tahun yang lalu yang tersebar di 15 objek wisata di Geopark Merangin. Beberapa diantaranya adalah mata air panas Nilo Sungsang, Air terjun sungai hitam, air terjun segerincing, danau telago biru, danau kawah kumbang, goa sengayau, dan fosil - fosil seperti fosil tuff, fosil daun, dan fosil kayu. </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Assets/img/000_FREEPIK UTK DESC/raja ampat web resmi/Rectangle 58.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Geopark Raja Ampat</h5>
+                <p>Dijuluki dengan sebutan "Zamrud Karst Katulistiwa". Kawasan ini berupa gugusan kepulauan karst dan batuan tua  yang berusia 439 – 360 juta tahun yang lalu. Di kawasan ini juga terdapat megabiodiversitas, geoheritage, dan warisan budaya yang beragam. Beberapa diantaranya seperti karst of piaynemo, pulau kelelawar, karst of wayag, danau ubur- ubur, dan mansuar. </p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- AKHIR DESKRIPSI UGGP -->
+
+  <!-- CONTACT -->
+      <!-- Contact -->
+      <section class="kontak" id="contact" style="padding-top: 4rem; padding-bottom: 2rem;">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col">
+              <h2>Kontak</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-3">
+            <div class="col-md-6">
+              <form method="post" action="https://formspree.io/f/xqkrnqng" name="contact-form">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nama Lengkap</label>
+                  <input type="text" class="form-control" id="nama" aria-describedby="nama" name="nama"/>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+                </div>
+                <div class="mb-3">
+                  <label for="pesan" class="form-label">Pesan</label>
+                  <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+                </div>
+                <button type="submit" class="btn-contact" style="background-color: #ffba33;width: 20%;
+                margin: auto;
+                text-align: center;
+                padding: 10px 0;
+                border-radius: 30px;
+                align-items: center;">Kirim</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Akhir Contact -->
+  <!-- AKHIR CONTACT -->
+  
+  <!-- Footer  -->
+  <footer class="footer" style="bottom: 0; background-color: #ffba33; box-sizing: border-box; width: 100%; text-align: left; padding: 50px 50px 10px 50px;">
+    <div class="footer-left" style="display: inline-block; vertical-align: top;">
+      <div class="logo">
+        <img src="Assets/img/logo upn.png" style="width: 5%;">
+        <img src="Assets/img/logo geomat.png" style="width: 25%;">
+      </div>
+    </div>
+    <div class="foter-center" style="text-align: center; padding-top: 20px;">
+      <div>
+        <p class="footer-copyright" style="color: black">Image By  UGGp Official Website and Freepik.com | Sound : “Wonderland Indonesia” by Alffy Rev ft. Novia Bachmid |</p>
+        <p>© Copyright 2023 | All Right Reserved</p>
+        <p style="color: black">Created By <a href="https://www.linkedin.com/in/andien-putri-9252851b8/" class="text-center" style="color: white;">Andien Febianty Putri - 117200020 - </a></p>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+
+  <!-- <footer class="footer"   style="background-color:#ffba33; padding-top: 4rem; flex: auto;">
+
+    <div>
+      <p style="color: white;">Created By <a href="https://www.linkedin.com/in/andien-putri-9252851b8/" class="text-center" style="color: white;">Andien Febianty Putri - 117200020 - </a></p>
+      <p style="color: white;">Teknik Geomatika - UPN Veteran Yogyakarta</p>
+    </div>
+    <div>
+      <p>Image By Official Website UGGp and Freepik.com |© Copyright 2023 | All Right Reserved</p>
+    </div> -->
+    
+   
+  </footer>
+
+  
+  <!-- Akhir Footer -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <!-- <audio autoplay loop src ="Assets/vid/backsound.mp3" type="audio/mp3"></audio> -->
+
+    <!-- <audio controls autoplay muted loop>
+      <source src="Assets/img/backsound.mp3">
+      This browser does not support audio
+  </audio> -->
+    
+  </body>
+</html>
+
+<!--  -->
